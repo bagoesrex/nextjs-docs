@@ -1,5 +1,3 @@
-function generateStaticParams() {}
- 
-export default function Page() {
-  return <h1>Hello, Blog Post Page!</h1>
+export default function Page({ params }) {
+  return <h1>Hello, Blog Post Page for {params.slug}!</h1>;
 }
